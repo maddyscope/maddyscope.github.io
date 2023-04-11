@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="button.css" rel="stylesheet">
+        <script src="button.js" defer></script>
+        <title>week10</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <img src="https://i.pinimg.com/originals/b9/fa/1c/b9fa1c53bc099ad0ecfbd333b8a7abf6.jpg" alt="Snow">
+        
+            <button class="btn" onclick="show()" id="btnID">
+                    boop me
+            </button>
+
+            <img id="my-image" src="https://media-be.chewy.com/wp-content/uploads/2021/04/15160416/Border-Collie_Featured-Image-1024x615.jpg"
+             style="display: none;">
+   <script>
+      const showImageButton = document.getElementById("btnID");
+      const myImage = document.getElementById("my-image"); 
+      showImageButton.addEventListener("click", () => { 
+         myImage.style.display = "block"; 
+      });
+   </script>
+        </div>
+
+
+    </body>
+</html>

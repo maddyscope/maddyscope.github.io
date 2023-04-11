@@ -1,0 +1,60 @@
+html {
+    margin: 0;
+    height: 100%;
+    background: url("CSbackground.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+}
+
+.sheep {
+    text-align: center;
+    position: fixed;
+    top: 69%;
+    left: 20%;
+    animation-name: sheep;
+    animation-duration:10s;
+    background-color: transparent;
+    border-radius: 10%;
+    
+}
+
+@keyframes sheep {
+    from {left: 30%; background-color: transparent;}
+    to {left: 40%; background-color: transparent;}
+}
+
+.sheep2 {
+    text-align: center;
+    position: fixed;
+    top: 60%;
+    left: 500%;
+    animation-name: sheep;
+    animation-duration:50s;
+    background-color: transparent;
+    border-radius: 10%;
+    
+}
+
+@keyframes sheep2 {
+    from {left: 50%; background-color: transparent;}
+    to {left: 60%; background-color: transparent;}
+}
+
+.sheep3 {
+    text-align: center;
+    position: fixed;
+    top: 69%;
+    left: 20%;
+    animation-name: sheep;
+    animation-duration:10s;
+    background-color: transparent;
+    border-radius: 10%;
+    
+}
+
+@keyframes sheep3 {
+    from {left: 60%; background-color: transparent;}
+    to {left: 80%; background-color: transparent;}
+}

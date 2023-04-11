@@ -1,45 +1,49 @@
-body  {
-    /* Source: The Guardian */
-    background: url("https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/8/20/1408531764991/f023f48d-67d0-45ef-acb3-732bec1d3bd5-2060x1236.jpeg?width=700&quality=85&auto=format&fit=max&s=3ca4e01f4e7fd2de1a854738ce4bef88") no-repeat center center fixed;
-    background-color: #cccccc;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
-
-.header {
-    text-align: center;
-    margin:40px;   
-}
-
-.body {
-    text-align: center;
-    margin:40px;
-}
-
-.flexing {
+.navigation {
     display: flex;
-    background-color: white;
-    border: thick double #32a1ce;
-}
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    list-style: none;
+    margin: 100; 
+    background: rgb(203, 186, 165);
+    padding: 15px
 
-img {
-    border: thick double #32a1ce;
-}
-
-.flexing > p {
-    background-color: #f1f1f1;
-    width: 30%;
-    margin: 10px;
-    padding: 30px;
-    font-size: 30px;
-    font-style: italic;
-    -webkit-transition: background-color 2s ease-out;
-    -moz-transition: background-color 2s ease-out;
-    -o-transition: background-color 2s ease-out;
-    transition: background-color 2s ease-out;
+    position: relative;
+  top: 200px;
+  left: 0px;
   }
-
-  .flexing > p:hover {
-    background-color: black;
+  
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: rgb(147, 133, 114);
   }
+  
+  .navigation a:hover {
+    background: #80572e;
+  }
+  
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: center;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: row wrap;
+      padding: 0;
+    }
+    .navigation a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 10px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 10px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+  
+  
