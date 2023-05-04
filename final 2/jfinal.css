@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "myFont";
+    src: url("PressStart2P-Regular.ttf");
+  }
+body {
+    background-color: rgb(209, 245, 221);
+    font-family: "myFont", "Press Start 2p";
+}
+
+h1 {
+    color: rgb(77, 118, 96);
+    text-align: center;
+    padding-top: 50px;
+    font-family: "myFont", "Press Start 2p";
+
+}
+
+h2 {
+    color: rgb(77, 118, 96);
+    text-align: center;
+    padding-top: 50px;
+    font-family: "myFont", "Press Start 2p";
+
+}
+
+.container {
+    display: flex;
+    background-color: rgb(91, 183, 131);
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: none;
+    transition: all 2s ease-in-out;
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container img {
+    height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+    overflow: clip;
+    background-image: url("green3.jpeg");
+}
+
+img:hover {
+    border-style: solid;
+    height: 250px;
+}
+

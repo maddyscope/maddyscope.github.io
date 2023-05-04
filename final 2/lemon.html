@@ -1,0 +1,61 @@
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="game.css" rel="stylesheet">
+
+<script> 
+    
+function changeImage()
+{
+var img = document.getElementById("image");
+img.src="lemonblossom.png";
+return false;
+}
+
+function changeImage2()
+{
+var img = document.getElementById("image");
+img.src="lemonmature.png";
+return false;
+}
+
+
+</script>
+
+<style>
+    .image-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #4dae67;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .image-button img {
+      height: 50px;
+      margin-right: 10px;
+    }
+  </style>
+
+</head>
+<body>
+    <h1>*|* Lemon Tree *|*</h1>
+    <div class="container">
+<img id="image" src="lemonbaby.png" />
+</div>
+<br><br><br>
+<div class="container2">
+
+    <button id="clickme" onclick="changeImage();"class="image-button"><img src="wateringcan.png" alt="wat"> </button>
+    <button id="clickme2" onclick="changeImage2();"class="image-button"><img src="fertilizer.png" alt="fert"> </button>
+
+</div>
+
+
+</body>
+</html>
