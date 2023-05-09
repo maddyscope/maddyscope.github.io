@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="game.css" rel="stylesheet">
+    <script src="rain.js" defer></script>
 
 <script> 
     
@@ -19,6 +20,10 @@ function changeImage2()
 var img = document.getElementById("image");
 img.src="peardead.png";
 return false;
+}
+var imageloaded = "pearblossom.png";
+if (imageloaded === true) {
+    meteor()
 }
 
 
@@ -42,19 +47,23 @@ return false;
     }
   </style>
 
+  
+
 </head>
 <body>
     <h1>*|*  Pear Tree  *|*</h1>
+    
     <div class="container">
-        
+      
 
-<img id="image" src="pearbaby.png" />
+  <img id="image" src="pearbaby.png" />
+  
 </div>
 <br><br><br>
 <div class="container2">
 
-    <button id="clickme" onclick="changeImage();"class="image-button"><img src="wateringcan.png" alt="wat"> </button>
-    <button id="clickme2" onclick="changeImage2();"class="image-button"><img src="fertilizer.png" alt="fert"> </button>
+    <button id="clickme" onclick="changeImage();"class="image-button"><img src="bwat.png" alt="wat"> </button>
+    <button id="clickme2" onclick="changeImage2();"class="image-button"><img src="bfert.png" alt="fert"> </button>
 
 </div>
 

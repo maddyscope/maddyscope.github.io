@@ -2,6 +2,10 @@
     font-family: "myFont";
     src: url("PressStart2P-Regular.ttf");
   }
+
+  html {
+    height: 100%;
+  }
 body {
     background-color: rgb(209, 245, 221);
     font-family: "myFont", "Press Start 2p";
@@ -50,3 +54,46 @@ h2 {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+i {
+    position: absolute;
+    height: 160px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: raining 5s linear Infinite;
+  }
+  @-moz-keyframes raining {
+    0% {
+      transform: translateY(-160px);
+    }
+    100% {
+      transform: translateY(calc(100vh + 160px));
+    }
+  }
+  @-webkit-keyframes raining {
+    0% {
+      transform: translateY(-160px);
+    }
+    100% {
+      transform: translateY(calc(100vh + 160px));
+    }
+  }
+  @-o-keyframes raining {
+    0% {
+      transform: translateY(-160px);
+    }
+    100% {
+      transform: translateY(calc(100vh + 160px));
+    }
+  }
+  @keyframes raining {
+    0% {
+      transform: translateY(-160px);
+    }
+    100% {
+      transform: translateY(calc(100vh + 160px));
+    }
+  }
+  
+  

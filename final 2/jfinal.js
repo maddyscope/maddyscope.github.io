@@ -35,7 +35,7 @@ function startgame(character) {
     console.log("You have clicked " + character);
 }
 
-// on lance la fonction pour chaque perso 
+// here is where the game starts from each 
 
 dogwood.addEventListener("click", function () {
     startgame("pear")
@@ -56,3 +56,9 @@ oak.addEventListener("click", function () {
 palm.addEventListener("click", function () {
     startgame("lemon")
 });
+
+
+    
+    
+    
+    
